@@ -1,0 +1,21 @@
+theme = "ao"
+[editor]
+line-number = "relative"
+mouse = false
+
+[editor.statusline]
+center = ["total-line-numbers"]
+
+[editor.cursor-shape]
+insert = "underline"
+  
+
+[editor.whitespace.characters]
+tab = "→"
+
+[keys.insert.j]
+k = "normal_mode"
+
+[keys.normal.space]
+"space" = ":insert-output printf ' '"
+"tab" = [":w",":run-shell-command shutdown -s -f -c 'Welp, coding time is over...'"]
